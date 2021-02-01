@@ -13,18 +13,21 @@
 </head>
 <body>
     <header>
-        <nav class="navbar-fixed">
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">TraceChain</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars fa-2x"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">FITUR</a></li>
-                    <li><a href="#">PRODUK</a></li>
-                    <li><a href="#">APA ITU BLOCKCHAIN?</a></li>
-                    <li><a href="#">TENTANG KAMI</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">TraceChain</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars fa-2x"></i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">FITUR</a></li>
+                        <li><a href="#">CARA KERJA</a></li>
+                        <li><a href="#">PRODUK</a></li>
+                        <li><a href="#">APA ITU BLOCKCHAIN?</a></li>
+                        <li><a href="#">TENTANG KAMI</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <ul class="sidenav" id="mobile-demo">
             <li><a href="sass.html">Sass</a></li>
             <li><a href="badges.html">Components</a></li>
@@ -34,27 +37,62 @@
     </header>
     
     <main>
-        <section id="jumbotron" class="valign-wrapper" style="padding-top: 150px;">
+        <section id="jumbotron" style="padding-top: 0px;">
             <div class="row">
-                <div class="jumbotron-desc col s6" style="padding-top: 50px; padding-bottom: 50px;">
-                    <h3>Lacak Produk yang <br> Anda Beli dengan Blockchain</h3>
-                    <p class="flow-text">
-                        Kami menawarkan pelacakan dan transparansi terhadap produk yang bekerja sama dengan kami.
-                    </p>
-                    <br>
-                    <span>
-                        <a href="#" class="btn-floating btn-small waves-effect waves-light">
-                            <i class="fa fa-play"></i>
-                        </a> <b>Lihat Video Penjelasan</b>
-                    </span>
+                <div class="jumbotron-desc col s12 m12" style="padding-top: 50px; padding-bottom: 50px;">
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <h3 style="font-weight: 600;">Lacak Produk yang Anda Beli dengan Blockchain</h3>
+                            <p class="flow-text">
+                                Kami menawarkan pelacakan dan transparansi informasi terhadap produk yang bekerja sama dengan kami.
+                            </p>
+                            <br>
+                            <span>
+                                <a href="#" class="btn-floating btn-small waves-effect waves-light">
+                                    <i class="fa fa-play"></i>
+                                </a> <b>Lihat Video Penjelasan</b>
+                            </span>
+                        </div>
+
+                        <div class="col s12 m6 center-align">
+                            <img id="hero" src="/assets/img/mobile.png" alt="hero" style="width: 90%;">
+                        </div>
+                    </div>
                 </div>
-                <div class="col s6 center-align">
-                    <img src="/assets/img/hero.png" alt="hero" style="max-height: 600px;">
-                </div>
-                <div class="col s12 center-align" style="margin-top: 50px;">
+                <div id="scroll" class="col s12 center-align" style="margin-top: 50px;">
+                    <p>Scroll Down</p>
                     <i class="fa fa-angle-down fa-3x"></i>
                 </div>
             </div>
+        </section>
+        <section id="feature" class="center-align white container" style="margin-top: 50px; padding: 20px; border-radius: 18px;">
+            <h3 style="font-weight: 600;">Pelacakan & Transparansi <br> Produk</h3>
+            <p>Kami menyediakan fitur pelacakan informasi produk secara penuh.</p>
+            <div class="row" style="margin-top: 100px;">
+                <div class="col s12 m4">
+                    <i class="fa fa-archive fa-3x white-text" style="width: 70px; height: 70px; padding: 20px; border-radius: 100%; background-color: rgb(248, 192, 57);"></i>
+                    <h5 style="font-weight: 600;">Proses Produksi</h5>
+                    <p>Informasi proses produksi meliputi bagaimana produk tersebut dihasilkan, bagaimana produk dikemas, hingga produk didistribusikan.</p>
+                </div>
+                <div class="col s12 m4">
+                    <i class="fa fa-link fa-3x white-text" style="width: 70px; height: 70px; padding: 20px; border-radius: 100%; background-color: rgb(255, 70, 117);"></i>
+                    <h5 style="font-weight: 600;">Pelacakan</h5>
+                    <p>Konsumen dapat melihat proses dan rute dari perjalanan sebuah produk.</p>
+                </div>
+                <div class="col s12 m4">
+                    <i class="fa fa-search fa-3x white-text" style="width: 70px; height: 70px; padding: 20px; border-radius: 100%; background-color: rgb(31, 13, 82);"></i>
+                    <h5 style="font-weight: 600;">Informasi Produk</h5>
+                    <p>Informasi detail produk juga diberikan sesuai dengan keterangan yang diberikan oleh produsen.</p>
+                </div>
+            </div>
+        </section>
+        <section id="cara-kerja" class="center-align container" style="margin-top: 50px; padding: 20px; border-radius: 18px;">
+            <h3 style="font-weight: 600;">Cara Kerja</h3>
+            <p>1. Cara kerja <b> TraceChain </b> cukup mudah. Pengguna hanya perlu mengunduh aplikasi <b>TraceChain</b> dari PlayStore. Atau klik tombol dibawah ini untuk beralih ke PlayStore.</p>
+            <a href="#" class="waves-effect waves-light btn-large" style="background-color: rgb(248, 192, 57);">Download Sekarang</a>
+            <p style="margin-top: 50px;">2. Setelah pengguna menginstall aplikasi, pengguna cukup mengarahkan kamera pemindai pada kode QR yang berlogo <b>TraceChain</b> tersemat pada produk yang telah bekerja sama dengan kami.</p>
+            <img src="/assets/img/scanqr.png" alt="scan-qr" style="width: 50%;">
+            <p style="margin-top: 50px;">3. Jika kode QR valid, halaman akan dialihkan ke bagian informasi.</p>
         </section>
     </main>
 </body>
