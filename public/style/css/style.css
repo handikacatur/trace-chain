@@ -1,32 +1,48 @@
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgba(238, 246, 248, 1);
     font-family: 'Montserrat', sans-serif;
     color: rgb(31, 13, 82);
 }
 
-.nav-wrapper > .brand-logo, .nav-wrapper > .sidenav-trigger, .nav-wrapper > ul > li > a{
+.nav-wrapper  .brand-logo, .nav-wrapper  .sidenav-trigger, .nav-wrapper  ul  li  a {
     color: rgb(31, 13, 82);
     font-weight: 600;
 }
 
 .nav-wrapper > .brand-logo {
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .nav-wrapper {
     background-color: white;
 }
 
+header ul li.active {
+    border-top: 3px solid indigo;
+    box-sizing: border-box;
+}
+
 .jumbotron-desc > h3 {
     font-weight: 600;
 }
 
-#scroll {
-    color: rgb(148, 148, 148);
+.card-action a {
+    color: grey !important;
 }
 
 #hero {
     animation: floating 2s ease-in-out infinite alternate;
+}
+
+#feature {
+    offset-position: 0;
 }
 
 @keyframes floating {
