@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 
@@ -15,5 +16,8 @@ app.use('/', landing);
 app.use('/', blockchain);
 app.use('/', aboutUs);
 app.use('/', product);
+app.use((req, res, next) => {
+    res.sendFile(path.resolve('./404.html'));
+});
 
 const server = app.listen(80, console.log('Server is running on port 80...'));
